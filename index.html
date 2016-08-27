@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ivy</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        .main_wrapper{
+            width: 100%;
+            float: left;
+        }
+        .inputBox{
+            width:70%;
+            float: left;
+            border: solid 2px #f39c12;
+            padding: 2%;
+            margin-top: 1%;
+        }
+        .ivyInput{
+            width: 70%;
+            padding: 1.5%;
+            float: left;
+        }
+        .askme{
+            padding: 2%;
+            background:#f39c12;
+            color: #FFF;
+            margin-left: 1%;
+            width: 20%;
+            border: none;
+            margin-top: 1%;
+        }
+        .chatbox{
+            height: 500px;
+            padding: 2%;
+            border: #666;
+            border: 1px solid #999;
+            background: #f0f0f0;
+        }
+        .singleChatLeft{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: #000;
+            float: left;
+            width: 100%;
+        }
+        .singleChatLeft .usrImg{
+            border-radius: 100%;
+            border: #666 1px solid;
+            float: left;
+            margin-left: 1%;
+
+        }
+        .singleChatLeft .chatText{
+            float: left;
+            background: #FFF;
+            margin-left: 2%;
+            padding: 1%;
+            border-radius: 15px;
+        }
+        .singleChatRight{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            color: #000;
+            float: left;
+            width: 100%;
+        }
+        .singleChatRight .usrImg{
+            border-radius: 100%;
+            border: #666 1px solid;
+            float: left;
+            margin-left: 1%;
+
+        }
+        .singleChatRight .chatText{
+            float: right;
+            background: #FFF;
+            margin-left: 2%;
+            padding: 1%;
+            border-radius: 15px;
+        }
+        .singleChatRight .ivyImg{
+            float: right;
+            padding: 1%;
+            text-align: center;
+            color: #FFF;
+            background: #f39c12;
+            border-radius: 100%;
+            margin-left: 2%;
+        }
+    </style>
+    <script src="js/api.ai.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="main_wrapper">
+       <div class="ivyInput">
+           <div class="chatbox">
+               <div class="singleChatLeft">
+                   <img src="images/user.png" height="30" class="usrImg">
+                   <div class="chatText"> Hey Ivy !</div>
+               </div>
+               <div class="singleChatRight">
+                   <span class="ivyImg">Ivy</span>
+                   <div class="chatText" style="background-image: url('images/sending.gif');background-size: cover; width: 40px;">  </div>
+               </div>
+           </div>
+
+           <input type="text" class="inputBox" placeholder="Ask me anything !">
+           <input type="submit" value="Ask Me" class="askme" />
+       </div>
+    </div>
+</body>
+</html>
